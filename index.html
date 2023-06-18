@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>batch1 Lecture 60 Array of Objects</title>
+
+    <style>
+
+    </style>
+    <script>
+
+    </script>
+</head>
+
+<body>
+    <h1 id="name"></h1>
+
+
+    <script>
+        let x = {
+            //menbers
+            //1 Property : value
+            //2 functions
+
+            name: "ANIL",
+            surnam: 'DOLLOR',
+            myFuncA: function () { // formal arguments
+                //function defination
+                // function body
+
+                console.log("My name is " + this.name); //this is current Object
+            }
+
+        }; // x is an js object 
+
+        // function calling
+        console.log(x.myFuncA())
+
+        let y = {
+            //1 Property : value
+            name: "Anil",
+            address: 'Neemuch MP INDIA',
+
+            "frients": ["A", 'B', `C`, "D"]
+        }
+
+        let z = ["ankit", 'kunal', `friends`]
+
+        // console.log(y);
+
+        // for each Loop
+        //1 array are iterables []
+        //2 Array of Objects are iterable [{},{}]
+        //2 objects are not iterables {}
+
+        z.forEach(element => {
+            //    console.log(element);
+        });
+
+        let s = ["AA", 'BB', `CC`];
+
+        // for Loop
+        //singluar Of plural
+
+        for (s of s) {
+            //  console.log(s);
+
+        }
+
+
+
+    </script>
+
+
+
+    <script>
+        let stud = {
+            // property: value
+            name: 'ankit',
+            surname: 'Tanwar',
+
+            // function defination
+            funcA: () => {
+                // function body
+                console.log("hello " + stud.name + ' ' +stud.surname);
+
+            }
+        } // JS object
+        // function calling
+        console.log(stud.funcA());
+
+
+
+       
+
+    </script>
+
+</body>
+
+</html>
